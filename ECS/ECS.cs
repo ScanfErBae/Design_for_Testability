@@ -33,7 +33,7 @@ namespace ECS
             {
                 // Validation is done in the property set method
                 // value is the built in name for the set value
-                if (value >= _lowerTemperatureThreshold)
+                if (value >=_lowerTemperatureThreshold)
                     _upperTemperatureThreshold = value;
                 else throw new ArgumentException("Upper threshold must be <= lower threshold");
             }
@@ -50,7 +50,7 @@ namespace ECS
             // Initialize properties
             UpperTemperatureThreshold = upperTemperatureThreshold;
             LowerTemperatureThreshold = lowerTemperatureThreshold;
-
+            
         }
 
 
@@ -75,6 +75,6 @@ namespace ECS
             }
         }
 
-
+        
     }
 }
